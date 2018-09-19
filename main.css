@@ -1,0 +1,874 @@
+/* -------------------------------- FONT IMPORT ------------------------------------------ */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Love+Ya+Like+A+Sister');
+/* -------------------------------- RESET ------------------------------------------ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ul {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* -------------------------------- BASE ------------------------------------------ */
+body {
+  font-family: "Comfortaa", sans-serif;
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  min-width: 300px;
+}
+section {
+  margin-bottom: 100px;
+}
+h1, h2, h3, h4 {
+  font-family: "Love Ya Like A Sister", cursive;
+  color: #509363;
+}
+h1 {
+  font-size: 3em;
+  margin: .5em 0;
+}
+h2 {
+  font-size: 2em;
+  margin: 1em 0;
+}
+h3 {
+  font-size: 1.5em;
+  margin: 1em 0;
+}
+h4 {
+  color: #E09090;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  font-size: 1.1em;
+  margin: 1.5em 10px;
+}
+li {
+  list-style-type: none;
+}
+em {
+  font-weight: bold;
+}
+p {
+  line-height: 1.4;
+  font-size: 1em;
+  margin: 0 auto;
+}
+a {
+  color: #509363;
+}
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+button, #form-button {
+  width: 200px;
+  font-family: "Comfortaa", sans-serif;
+  background-color: #509363;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 8px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  color: #BDFFD0;
+}
+button {
+  margin-top: 40px;
+}
+button:hover, #form-button:hover {
+  background-color: #BDFFD0;
+  color: #509363;
+  letter-spacing: 2px;
+}
+.button-center {
+  text-align: center;
+}
+.wrapper {
+  width: 96%;
+  padding: 0 2%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* --------------------------------JS------------------------------------------ */
+.gymnasts, .plan-icons, .reviewers, .helping-hands, .about-text, .faq-wrap {
+  opacity: 0;
+  -webkit-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+.fade-in-up {
+  opacity: 1;
+  -webkit-animation: fadeInUp .3s;
+          animation: fadeInUp .3s;
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    -webkit-transform: translate3d(0, 500px, 0);
+            transform: translate3d(0, 500px, 0);
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    -webkit-transform: translate3d(0, 500px, 0);
+            transform: translate3d(0, 500px, 0);
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+.rotate {
+  -webkit-animation: rotate 1.6s;
+          animation: rotate 1.6s;
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(60deg);
+            transform: rotate(60deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+.food {
+  position: absolute;
+  right: -50px;
+}
+/* -------------------------------- HEADER ------------------------------------------ */
+header {
+  z-index: 999;
+}
+header nav ul {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 20px;
+  z-index: 999;
+  max-width: 1920px;
+  position: relative;
+}
+header nav ul li {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.dropbtn {
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  margin: 0;
+}
+.dropdown-content a {
+  font-size: .9em;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: 16px;
+  background: #90E0A7;
+  color: #509363;
+}
+.dropdown-content a:hover {
+  background: #BDFFD0;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 50px;
+  z-index: 1000;
+  background: rgba(189, 255, 208, 0.7);
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.shrink {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  top: -1.5%;
+  left: -1.5%;
+}
+.logo {
+  position: fixed; 
+  width: 120px;
+  z-index: 1001;
+  padding-top: 10px;
+  transition: 0.3s ease;
+}
+.logo:hover {
+  cursor: pointer;
+}
+/* -------------------------------- HERO ------------------------------------------ */
+section#hero {
+  height: 100vh;
+  max-height: 1000px;
+  min-height: 600px;
+  background: url(apt-bg1.png) no-repeat left bottom;
+  background-size: contain;
+  padding-top: 4%;
+}
+.hero-text h1 {
+  border-bottom: 2px solid #509363;
+  letter-spacing: 2px;
+}
+.hero-flex {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.hero-flex div {
+  padding: 20px;
+  max-width: 450px;
+}
+.hero-flex div p {
+  margin-left: 0;
+}
+.avo img {
+  padding-top: 20%;
+}
+/* -------------------------------- ABOUT ------------------------------------------ */
+section#about {
+  background: url(apt-bg2.png) no-repeat right center;
+  padding-bottom: 200px;
+  position: relative;
+  overflow: hidden;
+}
+div.about-text {
+  width: 50%;
+}
+img.fruit-bowl {
+  position: absolute;
+}
+/* -------------------------------- HANDS ------------------------------------------ */
+section#andrea-hands {
+  background: url(apt-bg3.png) no-repeat right bottom;
+  position: relative;
+}
+div.helping-hands, div.gymnasts, div.plan-icons, div.reviewers {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+div.helping-hands div {
+  max-width: 350px;
+  text-align: center;
+  padding: 20px;
+}
+div.helping-hands div p {
+  text-align: left;
+  margin-bottom: 100px;
+}
+div.helping-hands img {
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+/* -------------------------------- PHOTOGRAPHS ------------------------------------------ */
+section#heavy-lifting div, section#tat-gal {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 200px 0;
+}
+section#heavy-lifting div img, section#tat-gal div img {
+  padding: 50px;
+}
+/* -------------------------------- GYMNASTS ------------------------------------------ */
+section#goals {
+  background: url(apt-bg4.png) no-repeat left bottom;
+  padding-bottom: 100px;
+}
+.your-goals {
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 100px;
+  max-width: 450px;
+  padding-left: 100px;
+}
+.your-goals2 {
+  max-width: 450px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flexibility, .strength {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.flexibility p, .strength p {
+  max-width: 80%;
+  text-align: left;
+}
+
+.your-goals img {
+  max-width: 300px;
+}
+/* -------------------------------- ICONS DIET / WORKOUT ------------------------------------------ */
+section#plans {
+  min-height: 100vh;
+  padding-top: 100px;
+  background: url(apt-bg2.png) no-repeat bottom right;
+}
+div.plan-icons div {
+  width: 450px;
+  text-align: center;
+}
+div.plan-icons div p {
+  padding-bottom: 50px;
+  max-width: 80%;
+  text-align: left;
+}
+.plan-icons img {
+  max-width: 120px;
+}
+/* ------------------------------- FOOD BOWLS ------------------------------------------ */
+img.fruit-bowl {
+  position: absolute;
+  left: -80px;
+}
+/* -------------------------------- REVIEWERS ------------------------------------------ */
+section#reviews {
+  background: url(apt-bg5.png) no-repeat left bottom;
+  min-height: 100vh;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+}
+div.reviewers {
+  text-align: center;
+}
+div.reviewers div {
+  max-width: 350px;
+  padding: 30px;
+}
+div.reviewers div p {
+  text-align: left;
+}
+div.reviewers div img {
+  max-width: 150px;
+  -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+div.reviewers div img:hover {
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+      transform: scaleX(-1);
+}
+/* ----------------------------------- GYMS SPONSORS -----------------------------------*/
+div#gyms {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+}
+div#gyms img {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  opacity: .5;
+}
+div#gyms img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
+div.dre {
+  text-align: center;
+}
+div.dre img {
+  width: 200px;
+  opacity: .7;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  -webkit-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+}
+div.dre img:hover {
+  opacity: 1;
+}
+/* -------------------------------- ACCORDIAN ------------------------------------------ */
+.accordion {
+  background-color: #90E0A7;
+  color: #509363;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+button.accordion {
+  margin: 0;
+}
+.active, .accordion:hover {
+  background-color: #BDFFD0;
+}
+.panel {
+  max-width: 600px;
+  background-color: white;
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height .2s;
+  -o-transition: max-height .2s;
+  transition: max-height .2s;
+  margin: 0 auto;
+}
+/* -------------------------------- FAQ ------------------------------------------ */
+section#faq {
+  padding: 150px 50px;
+  position: relative;
+  overflow: hidden;
+}
+section#faq h1 {
+  text-align: center;
+}
+/* -------------------------------- FORM ------------------------------------------ */
+section#form {
+  margin-bottom: 0;
+}
+#form-main {
+  margin: 0 auto;
+}
+#form-div {
+  background-color: #C1F1D2;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+.feedback-input {
+  background-color: #FFF;
+  color: #222;
+  padding: 10px;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.feedback-input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+#comment, #email, #name {
+  background-image: url(icon.png);
+  background-size: 20px;
+  background-position: 11px 8px;
+  background-repeat: no-repeat;
+}
+#form-button {
+  width: 100%;
+}
+textarea {
+  resize: vertical;
+  overflow: auto;
+  height: 150px;
+}
+input:hover, textarea:hover, input:focus, textarea:focus {
+  background-color: #FFF;
+}
+/* -------------------------------- FOOTER ------------------------------------------ */
+div#footer-filler {
+  width: 100%;
+  height: 250px;
+  background: url(apt-bg6.png) no-repeat bottom;
+}
+#apt-footer {
+  background: #90E0A7 url(apt-logo.png) no-repeat 95% center;
+  background-size: 60px;
+}
+#apt-footer div ul {
+  padding: 10px 0;
+  height: 100px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#apt-footer li {
+  line-height: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#apt-footer li:hover {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+#apt-footer i {
+  color: #509363;
+  font-size: 1.5em;
+  padding: 10px;
+}
+.bn-links li div {
+  height: 50px;
+  width: 50px;
+  background: url(logos-sprite.png) no-repeat 0 0;
+  background-size: 200px;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+  opacity: .3;
+}
+.bn-links li:nth-child(2) div {
+  background-position: -50px 0;
+}
+.bn-links li:nth-child(3) div {
+  background-position: -100px 0;
+}
+.bn-links li:last-child div {
+  background-position: -150px 0;
+}
+.bn-links div:hover {
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+  opacity: 1;
+}
+.bn-links ul {
+  margin: 50px 0;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.bn-links li:nth-child(2), .bn-links li:nth-child(3), .bn-links li:last-child {
+  margin-left: 3%;
+}
+#footer {
+  width: 100%;
+}
+.nudl-wrapper {
+  color: #222;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+  background: #f2f2f2;
+}
+.nudl-wrapper img {
+  vertical-align: middle;
+  padding-right: 5px;
+  width: 113px;
+}
+@media screen and (min-width: 1500px) {
+  .logo {
+    left: 5%;
+  }
+  .wrapper {
+    max-width: 1360px;
+  }
+  .hero-flex div {
+    padding-top: 100px;
+  }
+  div.plan-icons {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  div.helping-hands div {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  section#hero {
+    background-size: cover;
+  }
+  .wrapper {
+    max-width: 800px;
+  }
+   .food {
+    display: none;
+  }
+  div.about-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+  div.gymnasts, div.helping-hands, div.plan-icons, div.hero-flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  div.helping-hands div {
+    text-align: center;
+  }
+  div.helping-hands p {
+    text-align: left;
+  }
+  section#goals {
+    margin-bottom: 0;
+  }
+  div.your-goals {
+    padding-left: 0;
+  }
+  div.gymnasts img {
+    max-width: 100%;
+  }
+  div.reviewers {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  section#hero {
+  background: url(apt-bg1tab.png) no-repeat center bottom;
+  background-size: cover;
+  padding-top: 2%;
+  }
+  section#goals {
+  background-color: rgba(189, 255, 208, 0.7);
+  background-image: none;
+  padding-top: 50px;
+  }
+  section#heavy-lifting {
+  display: none;
+  }
+  section#about {
+  padding-bottom: 0;
+  }
+  section#andrea-hands {
+  background: url(apt-bg3tab.png) no-repeat bottom;
+  margin-bottom: 0;
+  }
+  section#reviews {
+  background: url(apt-bg5tab.png) no-repeat left bottom;
+  }
+  .wrapper {
+  max-width: 600px;
+  }
+  div.hero-text, div.avo img {
+  text-align: center;
+  width: 100%;
+  }
+  div.hero-text {
+  padding-top: 40px;
+  }
+  header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: rgba(189, 255, 208, 0.7);
+  }
+  header nav ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background: #90E0A7;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  padding-bottom: 0;
+  padding-top: 0;
+  overflow: hidden;
+  margin-top: -1000px;
+  -webkit-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+  }
+  header nav ul.open {
+  margin: 0;
+  padding: 0;
+  }
+  nav ul li:hover {
+  background: #BDFFD0;
+  }
+  header nav ul li {
+  margin: 0;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  }
+  nav ul li a {
+  text-align: center;
+  color: #509363;
+  margin: 0 auto;
+  text-decoration: none;
+  }
+  section#faq {
+  display: none;
+  }
+  a.burger-nav {
+  display: block;
+  height: 50px;
+  opacity: 0.7;
+  margin-right: 15px;
+  background-image: url("burger-nav-open.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  }
+  a.change-bg {
+  background-image: url("burger-nav-close.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1002;
+  }
+  a.burger-nav:hover {
+  opacity: 1;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  }
+  .dropdown-content {
+  position: relative;
+  }
+  .dropdown-content a {
+  color: #FFF;
+  text-align: center;
+  }
+  .dropdown-content a:hover {
+  text-decoration: none;
+  color: #509363;
+  text-align: center;
+  }
+  section#heavy-lifting div, section#tat-gal {
+  display: none;
+  }
+  div#gyms {
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  }
+  div#gyms img {
+  padding: 20px;
+  }
+  .logo {
+    top: -5px;
+    left: -5px;
+  width: 90px;
+}
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  div.avo {
+    display: none;
+  }
+  div#gyms img {
+    display: block;
+  }
+}
